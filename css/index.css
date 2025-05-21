@@ -268,6 +268,12 @@ blockquote {
   padding: 12px 40px 12px 36px;
 }
 
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
 .page-container {
   max-width: 1008px;
 }
@@ -1364,40 +1370,4 @@ blockquote {
   .footer-layout {
     grid-template-columns: 2fr;
   }
-}
-
-@font-face {
-  font-family: "Inter Variable";
-  src: url("../fonts/InterVariable.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter Variable";
-  src: url("../fonts/InterVariable-Italic.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Icons (Font Awesome)";
-  src: url("../fonts/fa-regular-400.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Icons Brands (Font Awesome)";
-  src: url("../fonts/fa-brands-400.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Icons (Font Awesome)";
-  src: url("../fonts/Font-Awesome-6-Free-Solid-900.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
 }
