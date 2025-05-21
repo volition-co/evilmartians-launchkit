@@ -800,6 +800,12 @@ img {
   display: flex;
 }
 
+.accordion-container {
+  border-top: 1px solid var(--colors-border-level-2);
+  flex-flow: column;
+  display: flex;
+}
+
 .accordion-item {
   border-bottom: 1px solid var(--colors-border-level-2);
   width: 100%;
@@ -807,34 +813,31 @@ img {
 }
 
 .accordion-toggle {
-  padding: var(--_sizing---m-button-vertical-padding) 48px
-    var(--_sizing---m-button-vertical-padding) var(--sizing-m-card-paddings);
+  padding: var(--sizing-m-card-paddings);
   align-items: center;
-  height: 68px;
   display: flex;
+  cursor: pointer;
 }
 
 .accordion-toggle:hover {
   color: var(--colors-text-secondary);
 }
 
-.dropdown-list {
+.accordion-chevron {
+  margin-left: auto;
+  color: var(--colors-text-tertiary);
+}
+
+[open] .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
   padding-right: 48px;
   padding-bottom: var(--_sizing---m-button-vertical-padding);
   padding-left: var(--sizing-m-card-paddings);
   background-color: #0000;
   display: block;
-  position: static;
-}
-
-.accordion-chevron {
-  color: var(--colors-text-tertiary);
-}
-
-.accordion-container {
-  border-top: 1px solid var(--colors-border-level-2);
-  flex-flow: column;
-  display: flex;
 }
 
 .section-copy {
@@ -954,6 +957,7 @@ img {
 
 .icon-s {
   font-family: var(--icons);
+  font-weight: 900;
   color: var(--colors-text-secondary);
   font-size: var(--paragraph-m-size);
   line-height: var(--paragraph-s-line-height);
