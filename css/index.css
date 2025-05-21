@@ -519,7 +519,6 @@ img {
   grid-auto-columns: 1fr;
   justify-content: space-between;
   place-items: center stretch;
-  min-width: 100%;
   max-width: 1008px;
   margin-left: 0;
   margin-right: 0;
@@ -1086,9 +1085,7 @@ img {
   text-decoration-color: var(--colors-accent-b);
 }
 
-.image-2,
-.image-3,
-.image-4 {
+.image-full {
   width: 100%;
 }
 
@@ -1197,7 +1194,6 @@ img {
     grid-column-gap: 24px;
     grid-row-gap: 24px;
   }
-
 
   .button-group-vertical {
     flex-shrink: 0;
