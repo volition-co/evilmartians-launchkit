@@ -827,6 +827,7 @@ img {
 }
 
 .toggle-option-button {
+  border: none;
   padding-top: var(--_sizing---s-button-vertical-padding);
   padding-bottom: var(--_sizing---s-button-vertical-padding);
   color: var(--colors-text-primary);
