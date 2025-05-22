@@ -165,6 +165,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -410,6 +414,17 @@ img {
 }
 
 /* Buttons */
+
+.button {
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
 
 .button-primary {
   padding: var(--_sizing---m-button-vertical-padding)
