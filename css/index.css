@@ -14,30 +14,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Icons (Font Awesome)";
-  src: url("../fonts/fa-regular-400.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Icons Brands (Font Awesome)";
-  src: url("../fonts/fa-brands-400.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Icons (Font Awesome)";
-  src: url("../fonts/fa-solid-900.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   /* Fonts */
   --text-font: "Inter Variable", Arial, sans-serif;
@@ -302,70 +278,64 @@ img {
   max-width: 720px;
 }
 
-.paragraph-l {
-  font-size: var(--paragraph-l-size);
-  line-height: var(--paragraph-l-line-height);
-  letter-spacing: var(--paragraph-l-letter-spacing);
+/* Text */
+
+/* Style used for content */
+.paragraph {
+  &.xs {
+    font-size: var(--paragraph-xs-size);
+    line-height: var(--paragraph-xs-line-height);
+  }
+
+  &.s {
+    font-size: var(--paragraph-s-size);
+    line-height: var(--paragraph-s-line-height);
+  }
+
+  &.m {
+    font-size: var(--paragraph-m-size);
+    line-height: var(--paragraph-m-line-height);
+  }
+
+  &.l {
+    font-size: var(--paragraph-l-size);
+    line-height: var(--paragraph-l-line-height);
+    letter-spacing: var(--paragraph-l-letter-spacing);
+  }
+
+  &.secondary {
+    color: var(--colors-text-secondary);
+  }
+
+  &.tertiary {
+    color: var(--colors-text-tertiary);
+  }
+
+  &.pseudo-link {
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--colors-accent-b);
+    text-decoration-color: var(--colors-accent-b);
+    text-decoration-thickness: 2px;
+  }
+
+  &.bold {
+    font-weight: 600;
+  }
 }
 
-.paragraph-s {
-  font-size: var(--paragraph-s-size);
-  line-height: var(--paragraph-s-line-height);
-}
-
-.paragraph-s.pseudo-link {
-  text-decoration: underline;
-  -webkit-text-decoration-color: var(--colors-accent-b);
-  text-decoration-color: var(--colors-accent-b);
-  text-decoration-thickness: 2px;
-}
-
-.paragraph-s.color-tertiary {
-  color: var(--colors-text-tertiary);
-}
-
-.paragraph-xs {
-  font-size: var(--paragraph-xs-size);
-  line-height: var(--paragraph-xs-line-height);
-}
-
-.ui-m {
+/* Style used for UI elements: buttons, links etc. */
+.ui {
   color: var(--colors-text-primary);
   font-size: var(--ui-m-size);
   line-height: var(--ui-m-line-height);
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-}
 
-.ui-m.color-tertiary {
-  color: var(--colors-text-tertiary);
-}
+  &.tertiary {
+    color: var(--colors-text-tertiary);
+  }
 
-.list-s {
-  font-size: var(--paragraph-s-size);
-  line-height: var(--paragraph-s-line-height);
-}
-
-.ui-m-bold {
-  color: var(--colors-text-primary);
-  font-size: var(--ui-m-size);
-  line-height: var(--ui-m-line-height);
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 500;
-}
-
-.ui-m-bold.single-line {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow-wrap: normal;
-  overflow: hidden;
-}
-
-.block-quote-s {
-  font-size: var(--paragraph-s-size);
-  line-height: var(--paragraph-s-line-height);
+  &.bold {
+    font-weight: 600;
+  }
 }
 
 /* Buttons */
@@ -482,6 +452,16 @@ img {
   width: 100%;
 }
 
+.list-s {
+  font-size: var(--paragraph-s-size);
+  line-height: var(--paragraph-s-line-height);
+}
+
+.block-quote-s {
+  font-size: var(--paragraph-s-size);
+  line-height: var(--paragraph-s-line-height);
+}
+
 /* Navigation */
 
 .navbar {
@@ -578,10 +558,6 @@ img {
   width: 116%;
   max-width: none;
   margin-left: -8%;
-}
-
-.paragraph-dimmed {
-  color: var(--colors-text-secondary);
 }
 
 .footer {
@@ -716,23 +692,6 @@ img {
 
 .card-with-icon {
   border-radius: 24px;
-}
-
-.paragraph-m-bold {
-  font-weight: 600;
-}
-
-.paragraph-s-bold {
-  color: var(--colors-text-primary);
-  font-size: var(--paragraph-s-size);
-  line-height: var(--paragraph-s-line-height);
-  font-weight: 600;
-}
-
-.paragraph-xs-bold {
-  font-size: var(--paragraph-xs-size);
-  line-height: var(--paragraph-xs-line-height);
-  font-weight: 600;
 }
 
 .cards-with-icons-container {
@@ -897,13 +856,6 @@ img {
   grid-row-gap: 2px;
   justify-content: flex-start;
   align-items: baseline;
-}
-
-.paragraph-l-bold {
-  font-size: var(--paragraph-l-size);
-  line-height: var(--paragraph-l-line-height);
-  letter-spacing: var(--paragraph-l-letter-spacing);
-  font-weight: 600;
 }
 
 .list-s-features {
