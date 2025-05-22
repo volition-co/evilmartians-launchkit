@@ -41,8 +41,6 @@
 :root {
   /* Fonts */
   --text-font: "Inter Variable", Arial, sans-serif;
-  --icons-brands: "Icons Brands (Font Awesome)", Arial, sans-serif;
-  --icons: "Icons (Font Awesome)", Arial, sans-serif;
 
   /* Colors */
   --colors-background: white;
@@ -154,18 +152,6 @@
   flex-direction: column;
   align-items: flex-start;
   display: flex;
-}
-
-@media screen and (max-width: 991px) {
-  .layout-blockcontainer {
-    max-width: 728px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .layout-blockcontainer {
-    max-width: none;
-  }
 }
 
 * {
@@ -1010,12 +996,6 @@ img {
   align-items: center;
 }
 
-.text-block {
-  font-family: var(--icons-brands);
-  font-size: var(--ui-m-size);
-  line-height: var(--ui-m-line-height);
-}
-
 .text-link-m {
   text-decoration: underline;
   -webkit-text-decoration-color: var(--colors-accent-b);
@@ -1024,21 +1004,6 @@ img {
 
 .image-full {
   width: 100%;
-}
-
-.icon-brand-s {
-  font-family: var(--icons-brands);
-  color: var(--colors-text-tertiary);
-  font-size: var(--paragraph-m-size);
-  line-height: var(--ui-m-line-height);
-  text-align: center;
-  min-width: 20px;
-  display: inline;
-}
-
-.icon-brand-s.color-accent {
-  color: var(--colors-accent);
-  text-decoration: none;
 }
 
 .icon-s {
@@ -1089,6 +1054,10 @@ img {
 }
 
 @media screen and (max-width: 991px) {
+  .layout-blockcontainer {
+    max-width: 728px;
+  }
+
   .page-container {
     padding-left: 24px;
     padding-right: 24px;
@@ -1192,8 +1161,6 @@ img {
     --paragraph-xs-size: 8.2px;
     --paragraph-xs-line-height: 10px;
     --ui-button-font-weight: 500;
-    --icons-brands: "Icons Brands (Font Awesome)", Arial, sans-serif;
-    --icons: "Icons (Font Awesome)", Arial, sans-serif;
     --_sizing---m-default-vertical: 12px;
     --_sizing---m-section-vertical: 24px;
     --_sizing---m-button-vertical-padding: 16px;
@@ -1201,6 +1168,10 @@ img {
     --_sizing---s-button-vertical-padding: 8px;
     --_sizing---s-button-horizontal-padding: 16px;
     --sizing-m-card-paddings: 12px;
+  }
+
+  .layout-blockcontainer {
+    max-width: none;
   }
 
   .navbar {
