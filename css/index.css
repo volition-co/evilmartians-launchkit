@@ -401,12 +401,12 @@ img {
       background-color: var(--colors-border-level-3);
     }
 
-    &.size-small {
+    &.compact {
       padding: var(--_sizing---s-button-vertical-padding) 12px;
     }
   }
 
-  &.size-small {
+  &.compact {
     padding: var(--_sizing---s-button-vertical-padding)
       var(--_sizing---s-button-horizontal-padding);
     border-radius: 8px;
