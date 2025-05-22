@@ -23,24 +23,20 @@
         class="navbar nav"
       >
         <div class="nav-container">
-          <a href="index.html" class="brand nav-brand"
+          <a
+            href="index.html"
+            aria-current="page"
+            class="brand nav-brand current"
             ><img
               src="images/Logo-Template.svg"
               loading="lazy"
               alt="Logo Template"
           /></a>
-          <nav role="navigation" class="nav-menu nav-menu">
-            <a
-              href="pricing.html"
-              aria-current="page"
-              class="nav-link nav-link current"
-              >Pricing</a
-            >
-            <a href="https://mintlify.com" class="nav-link nav-link">Docs ↗</a>
-            <a href="https://substack.com" class="nav-link nav-link">Blog ↗</a>
-            <a href="https://wellfound.com" class="nav-link nav-link"
-              >Careers ↗</a
-            >
+          <nav role="navigation" class="nav-menu">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="https://mintlify.com" class="nav-link">Docs ↗</a>
+            <a href="https://substack.com" class="nav-link">Blog ↗</a>
+            <a href="https://wellfound.com" class="nav-link">Careers ↗</a>
             <div class="button-group-inline mobile-only">
               <a href="#" class="button-tertiary button">Sign In</a>
               <a href="#" class="button-primary button">Sign Up</a>
@@ -58,9 +54,9 @@
               >Sign In</a
             >
             <a href="#" class="button-primary size-small button">Sign Up</a>
-            <div class="menu-button nav-button">
-              <div class="icon-nav-menu"></div>
-            </div>
+            <button class="menu-button size-small nav-button tablet-only">
+              <span class="icon-s solid"></span>
+            </button>
           </div>
         </div>
       </div>
