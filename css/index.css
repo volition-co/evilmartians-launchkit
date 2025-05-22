@@ -62,7 +62,17 @@
   --colors-gradient-bg-end: #0081ff00;
 
   /* Sizing */
+  --paragraph-xs-size: 11px;
+  --paragraph-xs-line-height: 16px;
+  --paragraph-s-size: 14px;
+  --paragraph-s-line-height: 22px;
   --paragraph-m-size: 16.5px;
+  --paragraph-l-size: 22px;
+  --paragraph-l-line-height: 32px;
+  --paragraph-l-letter-spacing: -0.44px;
+  --paragraph-xl-size: 48px;
+  --paragraph-xl-line-height: 56px;
+  --paragraph-xl-letter-spacing: -1px;
   --paragraph-m-line-height: 28px;
   --_sizing---m-default-vertical: 12px;
   --_sizing---m-section-vertical: 60px;
@@ -84,13 +94,6 @@
   --header-5-line-height: 24px;
   --ui-m-size: 16.5px;
   --ui-m-line-height: 20px;
-  --paragraph-l-size: 22px;
-  --paragraph-l-line-height: 32px;
-  --paragraph-l-letter-spacing: -0.44px;
-  --paragraph-s-size: 14px;
-  --paragraph-s-line-height: 22px;
-  --paragraph-xs-size: 11px;
-  --paragraph-xs-line-height: 16px;
   --_sizing---m-button-vertical-padding: 12px;
   --_sizing---m-button-horizontal-padding: 24px;
   --ui-button-font-weight: 500;
@@ -666,19 +669,6 @@ img {
   border-radius: 16px;
 }
 
-.icon-brand-m {
-  font-family: var(--icons-brands);
-  color: var(--colors-text-tertiary);
-  font-size: var(--paragraph-l-size);
-  line-height: var(--ui-m-line-height);
-  display: inline;
-}
-
-.icon-brand-m.color-accent {
-  color: var(--colors-accent);
-  min-width: 20px;
-}
-
 .feature-heading {
   margin-bottom: var(--_sizing---m-default-vertical);
   max-width: 672px;
@@ -1000,21 +990,6 @@ img {
   display: flex;
 }
 
-.icon-brand-s {
-  font-family: var(--icons-brands);
-  color: var(--colors-text-tertiary);
-  font-size: var(--paragraph-m-size);
-  line-height: var(--ui-m-line-height);
-  text-align: center;
-  min-width: 20px;
-  display: inline;
-}
-
-.icon-brand-s.color-accent {
-  color: var(--colors-accent);
-  text-decoration: none;
-}
-
 .icon-link-s {
   grid-column-gap: 4px;
   grid-row-gap: 4px;
@@ -1051,70 +1026,62 @@ img {
   width: 100%;
 }
 
-.icon-s {
-  font-family: var(--icons);
-  font-weight: 400;
-  color: var(--colors-text-secondary);
-  font-size: var(--paragraph-s-size);
-  line-height: var(--paragraph-s-line-height);
-  text-align: center;
-  min-width: 22px;
-  display: inline;
-}
-
-.icon-s.solid {
-  font-weight: 900;
-}
-
-.icon-m {
-  font-family: var(--icons);
-  color: var(--colors-text-tertiary);
-  font-size: var(--paragraph-l-size);
-  line-height: var(--ui-m-line-height);
-  display: inline;
-}
-
-.icon-m-solid {
-  font-family: var(--icons);
+.icon-brand-s {
+  font-family: var(--icons-brands);
   color: var(--colors-text-tertiary);
   font-size: var(--paragraph-m-size);
   line-height: var(--ui-m-line-height);
-  font-weight: 900;
+  text-align: center;
+  min-width: 20px;
   display: inline;
+}
+
+.icon-brand-s.color-accent {
+  color: var(--colors-accent);
+  text-decoration: none;
+}
+
+.icon-s {
+  color: var(--colors-text-tertiary);
+  font-size: var(--paragraph-s-size);
+  line-height: var(--ui-s-line-height);
+  display: inline;
+}
+
+.icon-m {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: var(--colors-text-tertiary);
+  font-size: var(--paragraph-m-size);
+  line-height: var(--ui-m-line-height);
+  height: var(--ui-m-line-height);
+
+  &.color-accent {
+    color: var(--colors-accent);
+  }
 }
 
 .icon-l {
-  font-family: var(--icons);
   color: var(--colors-text-tertiary);
-  font-size: 36px;
-  line-height: 36px;
+  font-size: var(--paragraph-l-size);
+  line-height: var(--ui-l-line-height);
   display: inline;
-}
 
-.icon-l-solid {
-  font-family: var(--icons);
-  color: var(--colors-text-tertiary);
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 36px;
-  display: inline;
+  &.color-accent {
+    color: var(--colors-accent);
+  }
 }
 
 .icon-xl {
-  font-family: var(--icons);
-  color: var(--colors-accent);
-  font-size: 48px;
-  line-height: 48px;
+  color: var(--colors-text-tertiary);
+  font-size: var(--paragraph-xl-size);
+  line-height: var(--ui-xl-line-height);
   display: inline;
-}
 
-.icon-xl-solid {
-  font-family: var(--icons);
-  color: var(--colors-accent);
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 48px;
-  display: inline;
+  &.color-accent {
+    color: var(--colors-accent);
+  }
 }
 
 .margin-top-l {
