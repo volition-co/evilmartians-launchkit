@@ -1,16 +1,16 @@
 function handleMobileNav() {
-  const navButton = document.querySelector("#nav-button");
-  const navMenu = document.querySelector(".nav-menu");
+  const mobileToggle = document.querySelector("[data-mobile-toggle]");
+  const navigation = document.querySelector("[ data-navigation]");
 
-  navButton.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-    navButton.classList.toggle("active");
+  mobileToggle.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    mobileToggle.classList.toggle("active");
   });
 
   document.documentElement.addEventListener("click", (event) => {
-    if (!navButton.contains(event.target) && !navMenu.contains(event.target)) {
-      navMenu.classList.remove("open");
-      navButton.classList.remove("active");
+    if (!mobileToggle.contains(event.target) && !navigation.contains(event.target)) {
+      navigation.classList.remove("open");
+      mobileToggle.classList.remove("active");
     }
   });
 }
