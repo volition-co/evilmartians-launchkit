@@ -341,11 +341,11 @@ img {
 /* Buttons */
 
 .button {
+  display: flex;
   cursor: pointer;
   border: none;
   text-decoration: none;
   background: transparent;
-
   padding: var(--_sizing---m-button-vertical-padding)
     var(--_sizing---m-button-horizontal-padding);
   font-size: var(--ui-m-size);
@@ -353,6 +353,9 @@ img {
   font-weight: var(--ui-button-font-weight);
   text-align: center;
   border-radius: 12px;
+  grid-column-gap: 8px;
+  justify-content: center;
+  align-items: center;
 
   &.primary {
     background-color: var(--colors-accent);
@@ -379,7 +382,27 @@ img {
 
     &:hover {
       background-color: var(--colors-surface);
-      color: var(--colors-text-secondary);
+      color: var(--colors-text-primary);
+    }
+  }
+
+  &.ghost {
+    background: transparent;
+    padding: var(--_sizing---m-button-vertical-padding)
+      var(--_sizing---m-button-horizontal-padding);
+    color: var(--colors-text-primary);
+
+    &:hover {
+      background-color: var(--colors-border-level-2);
+      color: var(--colors-on-accent);
+    }
+
+    &.active {
+      background-color: var(--colors-border-level-3);
+    }
+
+    &.size-small {
+      padding: var(--_sizing---s-button-vertical-padding) 12px;
     }
   }
 
@@ -394,7 +417,6 @@ img {
 
 .button-group {
   grid-column-gap: 12px;
-  grid-row-gap: 12px;
   flex-flow: wrap;
   align-items: center;
   display: flex;
@@ -513,29 +535,6 @@ img {
   color: var(--colors-text-tertiary);
 }
 
-.nav-button {
-  padding: var(--_sizing---m-button-vertical-padding);
-  color: var(--colors-text-secondary);
-  font-size: var(--ui-m-size);
-  line-height: var(--ui-m-line-height);
-  font-weight: var(--ui-button-font-weight);
-  text-align: center;
-  background-color: #0000;
-  border: none;
-  border-radius: 12px;
-  text-decoration: none;
-}
-
-.nav-button.size-small {
-  padding: var(--_sizing---s-button-vertical-padding);
-  border-radius: 8px;
-}
-
-.nav-button.open {
-  background-color: #c8c8c8;
-  color: white;
-}
-
 .div-block {
   justify-content: space-between;
   align-items: center;
@@ -594,34 +593,6 @@ img {
 
 .text-centered {
   text-align: center;
-}
-
-.button-icon-text {
-  padding: var(--_sizing---m-button-vertical-padding) 12px;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
-  color: var(--colors-text-tertiary);
-  text-align: center;
-  border-radius: 12px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  display: flex;
-}
-
-.button-icon-text:hover {
-  background-color: var(--colors-surface);
-}
-
-.button-icon-text.size-small {
-  padding: var(--_sizing---s-button-vertical-padding) 6px;
-  grid-column-gap: 6px;
-  grid-row-gap: 6px;
-  border-radius: 8px;
-}
-
-.button-icon-text.size-small.hide-on-mobile {
-  object-fit: fill;
 }
 
 .feature-card {
@@ -986,7 +957,7 @@ img {
   }
 
   .nav-link {
-    padding: 16px 4px;
+    padding: 16px;
     display: inline-flex;
   }
 
@@ -1007,6 +978,7 @@ img {
   .nav-menu {
     position: absolute;
     top: calc(100% + 6px);
+    text-align: center;
     left: 0;
     right: 0;
     background-color: var(--colors-background);
@@ -1015,10 +987,10 @@ img {
     margin-top: 4px;
     padding: 12px 24px;
     display: none;
-  }
 
-  .nav-menu.open {
-    display: block;
+    &.open {
+      display: block;
+    }
   }
 
   .grid.gap-l {
@@ -1093,6 +1065,10 @@ img {
     padding-top: 24px;
   }
 
+  .button-group {
+    grid-column-gap: 8px;
+  }
+
   .columns-2,
   .columns-3,
   .columns-1\/2-1,
@@ -1124,8 +1100,7 @@ img {
   }
 
   .button-group-inline.mobile-only {
-    grid-column-gap: 4px;
-    grid-row-gap: 4px;
+    grid-row-gap: 12px;
     flex-flow: column;
     margin-top: 12px;
     display: flex;
