@@ -1,0 +1,60 @@
+.toggle-button-container {
+  background-color: var(--colors-surface);
+  box-shadow: 0 0 0 4px var(--colors-surface);
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.toggle-option-button {
+  border: none;
+  padding-top: var(--sizing-s-button-vertical-padding);
+  padding-bottom: var(--sizing-s-button-vertical-padding);
+  color: var(--colors-text-primary);
+  font-size: var(--ui-m-size);
+  line-height: var(--ui-m-line-height);
+  text-align: center;
+  background-color: #0000;
+  border-radius: 8px;
+  min-width: 120px;
+}
+
+.toggle-current-option-marker {
+  z-index: -1;
+  background-color: var(--colors-background);
+  box-shadow: 0 0 0 1px var(--colors-border-level-2);
+  border-radius: 8px;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.price-line {
+  display: flex;
+  gap: 2px;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid var(--colors-border-level-3);
+  margin-top: 24px;
+  padding-top: 16px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.justified-vertically {
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
