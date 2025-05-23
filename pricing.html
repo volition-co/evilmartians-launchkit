@@ -7,6 +7,8 @@
     <meta content="Pricing" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/tablet.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -19,95 +21,88 @@
   </head>
   <body>
     <div class="background-gradient"></div>
-    <div class="layout-blockcontainer page-container container">
-      <div role="banner" class="navbar nav">
-        <div class="nav-container">
-          <a
-            href="index.html"
-            aria-current="page"
-            class="brand nav-brand current"
-            ><img
-              src="images/Logo-Template.svg"
-              loading="lazy"
-              alt="Logo Template"
-          /></a>
-          <nav role="navigation" class="nav-menu" data-navigation>
-            <a href="pricing.html" class="nav-link">Pricing</a>
-            <a href="https://mintlify.com" class="nav-link">Docs ↗</a>
-            <a href="https://substack.com" class="nav-link">Blog ↗</a>
-            <a href="https://wellfound.com" class="nav-link">Careers ↗</a>
-            <div class="button-group-inline mobile-only">
-              <a href="#" class="button tertiary">Sign In</a>
-              <a href="#" class="button primary">Sign Up</a>
-            </div>
-          </nav>
-          <div class="button-group">
-            <a
-              href="https://github.com"
-              class="button-icon-text compact hide-on-mobile inline-block"
-            >
-              <div class="fa-brands fa-github icon-l"></div>
-              <div class="paragraph s tertiary">42K</div>
-            </a>
-            <a href="#" class="button tertiary compact hide-on-mobile"
-              >Sign In</a
-            >
-            <a href="#" class="button primary compact">Sign Up</a>
-            <button class="button ghost compact tablet-only" data-mobile-toggle>
-              <span class="fa-solid fa-bars icon-m"></span>
-            </button>
+    <div class="page-container">
+      <div class="nav-container">
+        <a href="index.html" aria-current="page" class="nav-brand"
+          ><img
+            src="images/Logo-Template.svg"
+            loading="lazy"
+            alt="Logo Template"
+        /></a>
+        <nav role="navigation" class="nav-menu" data-navigation>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="https://mintlify.com" class="nav-link">Docs ↗</a>
+          <a href="https://substack.com" class="nav-link">Blog ↗</a>
+          <a href="https://wellfound.com" class="nav-link">Careers ↗</a>
+          <div class="button-group-inline mobile-only">
+            <a href="#" class="button tertiary">Sign In</a>
+            <a href="#" class="button primary">Sign Up</a>
           </div>
+        </nav>
+        <div class="button-group">
+          <a
+            href="https://github.com"
+            class="button ghost compact hide-on-mobile"
+          >
+            <div class="fa-brands fa-github icon-l"></div>
+            <div class="paragraph s tertiary">42K</div>
+          </a>
+          <a href="#" class="button tertiary compact hide-on-mobile">Sign In</a>
+          <a href="#" class="button primary compact">Sign Up</a>
+          <button class="button ghost compact nav-hamburger" data-mobile-toggle>
+            <span class="fa-solid fa-bars icon-m"></span>
+          </button>
         </div>
       </div>
-      <section class="section text-centered">
-        <h1>Pricing</h1>
-        <p class="paragraph m bold">Get 20% off with yearly</p>
-        <div class="toggle-button-container">
-          <button class="toggle-option-button" data-pricing-toggle="monthly">
-            Monthly
-          </button>
-          <button class="toggle-option-button" data-pricing-toggle="yearly">
-            Yearly
-          </button>
-          <div
-            class="toggle-current-option-marker"
-            data-pricing-toggle-marker
-            data-pricing-current="yearly"
-          ></div>
+      <section>
+        <div class="text-centered full-width">
+          <h1>Pricing</h1>
+          <p class="paragraph m bold">Get 20% off with yearly</p>
+          <div class="toggle-button-container">
+            <button class="toggle-option-button" data-pricing-toggle="monthly">
+              Monthly
+            </button>
+            <button class="toggle-option-button" data-pricing-toggle="yearly">
+              Yearly
+            </button>
+            <div
+              class="toggle-current-option-marker"
+              data-pricing-toggle-marker
+              data-pricing-current="yearly"
+            ></div>
+          </div>
         </div>
-      </section>
-      <section class="section no-top-padding">
-        <div class="grid columns-3">
+        <div class="grid columns-3 margin-top-xl">
           <div class="feature-card">
-            <div class="layout-vflex vertical-stretch-container">
+            <div class="vertical-stretch-container">
               <div class="vertical-stretch-content---align-top">
                 <div class="feature-heading">
-                  <h5 class="no-top-margin">Starter</h5>
+                  <p class="paragraph l bold no-top-margin">Starter</p>
                   <p class="paragraph s secondary">For individuals</p>
-                  <div class="layout-hflex price-line">
+                  <div class="price-line">
                     <div class="paragraph l bold">Free</div>
                   </div>
                 </div>
                 <div class="list-s-features separator-on-top">
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">Lorem ipsum dolor sit amet</div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">Consectetur adipiscing elit</div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">Ipsum dolor sit amet</div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">
                       Dolor sit amet, consectetur adipiscing
@@ -121,12 +116,12 @@
             </div>
           </div>
           <div class="feature-card">
-            <div class="layout-vflex vertical-stretch-container">
+            <div class="vertical-stretch-container">
               <div class="vertical-stretch-content---align-top">
                 <div class="feature-heading">
-                  <h5 class="no-top-margin">Startup</h5>
+                  <p class="paragraph l bold no-top-margin">Startup</p>
                   <p class="paragraph s secondary">For small teams</p>
-                  <div class="layout-hflex price-line price-line-month">
+                  <div class="price-line">
                     <div
                       class="paragraph l bold"
                       data-pricing-monthly="$60"
@@ -144,28 +139,28 @@
                   </div>
                 </div>
                 <div class="list-s-features separator-on-top">
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">
                       Consectetur adipiscing elit. Suspendisse varius enim in
                       eros elementum tristique
                     </div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">Consectetur adipiscing elit</div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">Ipsum dolor sit amet</div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">
                       Dolor sit amet, consectetur adipiscing
@@ -179,12 +174,12 @@
             </div>
           </div>
           <div class="feature-card">
-            <div class="layout-vflex vertical-stretch-container">
+            <div class="vertical-stretch-container">
               <div class="vertical-stretch-content---align-top">
                 <div class="feature-heading">
-                  <h5 class="no-top-margin">Business</h5>
+                  <p class="paragraph l bold no-top-margin">Business</p>
                   <p class="paragraph s secondary">For growing business</p>
-                  <div class="layout-hflex price-line price-line-year">
+                  <div class="price-line">
                     <div
                       class="paragraph l bold"
                       data-pricing-monthly="$200"
@@ -202,25 +197,25 @@
                   </div>
                 </div>
                 <div class="list-s-features separator-on-top">
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">Lorem ipsum dolor sit amet</div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">Consectetur adipiscing elit</div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">Ipsum dolor sit amet</div>
                   </div>
-                  <div class="layout-hflex list-s-item-feature">
+                  <div class="list-s-item-feature">
                     <div class="fa-regular fa-square-check icon-m"></div>
                     <div class="paragraph s">
                       Dolor sit amet, consectetur adipiscing
@@ -237,17 +232,17 @@
         <div class="grid">
           <div class="feature-card">
             <div class="feature-heading">
-              <h5 class="no-top-margin">Enterprise</h5>
+              <p class="paragraph l bold no-top-margin">Enterprise</p>
               <p class="paragraph s secondary">
                 For organizations requiring the highest level of security and
                 control
               </p>
             </div>
-            <a href="#" class="button tertiary margin-top-l">Contact Us</a>
+            <a href="#" class="button tertiary">Contact Us</a>
           </div>
         </div>
       </section>
-      <section class="section no-top-padding">
+      <section>
         <div class="table">
           <div class="table-header-row">
             <div class="paragraph s bold"></div>
@@ -290,43 +285,35 @@
             </p>
           </div>
           <div>
-            <div class="layout-vflex link-list">
-              <a
-                href="pricing.html"
-                aria-current="page"
-                class="paragraph s current"
-                >Pricing</a
-              >
-              <a href="licenses.html" class="paragraph s">Licenses</a>
-              <a href="https://mintlify.com" class="paragraph s">Docs ↗</a>
-              <a href="https://substack.com" class="paragraph s">Blog ↗</a>
-              <a href="https://wellfound.com" class="paragraph s">Careers ↗</a>
+            <div class="link-list">
+              <a href="pricing.html" class="ui s">Pricing</a>
+              <a href="licenses.html" class="ui s">Licenses</a>
+              <a href="https://mintlify.com" class="ui s">Docs ↗</a>
+              <a href="https://substack.com" class="ui s">Blog ↗</a>
+              <a href="https://wellfound.com" class="ui s">Careers ↗</a>
             </div>
           </div>
           <div>
-            <div class="layout-vflex link-list">
-              <a href="https://github.com" class="icon-link-s inline-block">
+            <div class="link-list">
+              <a href="https://github.com" class="icon-link-s ui s">
                 <div class="fa-brands fa-github icon-m color-accent"></div>
-                <div class="paragraph s pseudo-link">GitHub</div>
+                <div class="pseudo-link">GitHub</div>
               </a>
-              <a
-                href="https://www.linkedin.com"
-                class="icon-link-s inline-block"
-              >
+              <a href="https://www.linkedin.com" class="icon-link-s ui s">
                 <div class="fa-brands fa-linkedin icon-m color-accent"></div>
-                <div class="paragraph s pseudo-link">LinkedIn</div>
+                <div class="pseudo-link">LinkedIn</div>
               </a>
-              <a href="https://x.com" class="icon-link-s inline-block">
+              <a href="https://x.com" class="icon-link-s ui s">
                 <div class="fa-brands fa-x-twitter icon-m color-accent"></div>
-                <div class="paragraph s pseudo-link">X.com</div>
+                <div class="pseudo-link">X.com</div>
               </a>
             </div>
           </div>
         </div>
-        <div class="layout-hflex link-list-horizontal">
-          <a href="#" class="link-tertiary paragraph s">Privacy Policy</a>
-          <a href="#" class="link-tertiary paragraph s">Terms of Service</a>
-          <a href="#" class="link-tertiary paragraph s">Cookie Policy</a>
+        <div class="link-list-horizontal">
+          <a href="#" class="ui s tertiary">Privacy Policy</a>
+          <a href="#" class="ui s tertiary">Terms of Service</a>
+          <a href="#" class="ui s tertiary">Cookie Policy</a>
         </div>
       </section>
     </div>

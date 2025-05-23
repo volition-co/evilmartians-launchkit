@@ -1,0 +1,111 @@
+@media screen and (max-width: 767px) {
+  body {
+    --paragraph-m-size: 13.7px;
+    --paragraph-m-line-height: 22px;
+    --ui-s-size: 11px;
+    --ui-s-line-height: 12px;
+    --ui-m-size: 13.7px;
+    --ui-m-line-height: 16px;
+    --header-1-size: 38.5px;
+    --header-1-line-height: 36px;
+    --header-1-letter-spacing: -0.77px;
+    --header-2-size: 27.5px;
+    --header-2-line-height: 28px;
+    --header-2-letter-spacing: -0.275px;
+    --header-3-size: 22px;
+    --header-3-line-height: 24px;
+    --header-3-letter-spacing: 0px;
+    --header-4-size: 19.2px;
+    --header-4-line-height: 22px;
+    --header-4-letter-spacing: 0px;
+    --header-5-size: 16.5px;
+    --header-5-line-height: 20px;
+    --paragraph-l-size: 16.5px;
+    --paragraph-l-line-height: 28px;
+    --paragraph-l-letter-spacing: 0px;
+    --paragraph-s-size: 11px;
+    --paragraph-s-line-height: 16px;
+    --paragraph-xs-size: 8.2px;
+    --paragraph-xs-line-height: 10px;
+    --sizing-m-section-vertical: 24px;
+    --sizing-m-button-vertical-padding: 16px;
+    --sizing-m-card-paddings: 12px;
+  }
+
+  .page-container {
+    max-width: none;
+  }
+
+  .navbar {
+    margin-top: 12px;
+    top: 12px;
+  }
+
+  .nav-container {
+    padding: 8px;
+  }
+
+  .footer {
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+
+  .button-group {
+    grid-column-gap: 8px;
+  }
+
+  .columns-2,
+  .columns-3,
+  .columns-1\/2-1,
+  .columns-1-1\/2,
+  .cards-with-icons-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .page-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .nav-link {
+    display: flex;
+  }
+
+  .button-group-inline.mobile-only {
+    grid-row-gap: 12px;
+    flex-flow: column;
+    margin-top: 12px;
+    display: flex;
+  }
+
+  .nav-menu {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .clients-container {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .accordion-toggle {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer-layout {
+    grid-template-columns: 2fr;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+}

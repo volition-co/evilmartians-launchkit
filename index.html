@@ -5,11 +5,13 @@
     <title>LaunchKit — the first free template for dev tools</title>
     <meta content="The first free template for dev tools" name="description" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/tablet.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="images/favicon/favicon.ico" sizes="32x32" />
     <link rel="icon" href="images/favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" />
@@ -17,47 +19,40 @@
   </head>
   <body class="theme-dark">
     <div class="background-gradient"></div>
-    <div class="layout-blockcontainer page-container container">
-      <div role="banner" class="navbar nav">
-        <div class="nav-container">
-          <a
-            href="index.html"
-            aria-current="page"
-            class="brand nav-brand current"
-            ><img
-              src="images/Logo-Template.svg"
-              loading="lazy"
-              alt="Logo Template"
-          /></a>
-          <nav role="navigation" class="nav-menu" data-navigation>
-            <a href="pricing.html" class="nav-link">Pricing</a>
-            <a href="https://mintlify.com" class="nav-link">Docs ↗</a>
-            <a href="https://substack.com" class="nav-link">Blog ↗</a>
-            <a href="https://wellfound.com" class="nav-link">Careers ↗</a>
-            <div class="button-group-inline mobile-only">
-              <a href="#" class="button tertiary">Sign In</a>
-              <a href="#" class="button primary">Sign Up</a>
-            </div>
-          </nav>
-          <div class="button-group">
-            <a
-              href="https://github.com"
-              class="button ghost compact hide-on-mobile inline-block"
-            >
-              <div class="fa-brands fa-github icon-l"></div>
-              <div class="paragraph s tertiary">42K</div>
-            </a>
-            <a href="#" class="button tertiary compact hide-on-mobile"
-              >Sign In</a
-            >
-            <a href="#" class="button primary compact">Sign Up</a>
-            <button class="button ghost compact tablet-only" data-mobile-toggle>
-              <span class="fa-solid fa-bars icon-m"></span>
-            </button>
+    <div class="page-container">
+      <div class="nav-container">
+        <a href="index.html" aria-current="page" class="nav-brand"
+          ><img
+            src="images/Logo-Template.svg"
+            loading="lazy"
+            alt="Logo Template"
+        /></a>
+        <nav role="navigation" class="nav-menu" data-navigation>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="https://mintlify.com" class="nav-link">Docs ↗</a>
+          <a href="https://substack.com" class="nav-link">Blog ↗</a>
+          <a href="https://wellfound.com" class="nav-link">Careers ↗</a>
+          <div class="button-group-inline mobile-only">
+            <a href="#" class="button tertiary">Sign In</a>
+            <a href="#" class="button primary">Sign Up</a>
           </div>
+        </nav>
+        <div class="button-group">
+          <a
+            href="https://github.com"
+            class="button ghost compact hide-on-mobile"
+          >
+            <div class="fa-brands fa-github icon-l"></div>
+            <div class="paragraph s tertiary">42K</div>
+          </a>
+          <a href="#" class="button tertiary compact hide-on-mobile">Sign In</a>
+          <a href="#" class="button primary compact">Sign Up</a>
+          <button class="button ghost compact nav-hamburger" data-mobile-toggle>
+            <span class="fa-solid fa-bars icon-m"></span>
+          </button>
         </div>
       </div>
-      <section class="section">
+      <section>
         <div class="heading first-screen centered">
           <h1 class="heading-1-tight balanced">
             The first free template for dev tools
@@ -89,11 +84,11 @@
           />
         </div>
       </section>
-      <section class="section">
+      <section>
         <h5 class="text-centered">
           Trusted by fast-growing companies worldwide
         </h5>
-        <div class="layout-hflex logo-container">
+        <div class="clients-container">
           <img
             src="images/logo-1.png"
             loading="lazy"
@@ -137,7 +132,7 @@
           />
         </div>
       </section>
-      <section class="section">
+      <section>
         <div class="heading">
           <h3 class="no-top-margin">Feature showcase blocks</h3>
           <p class="paragraph m secondary">
@@ -151,7 +146,9 @@
         <div class="grid">
           <div class="feature-card">
             <div class="feature-heading">
-              <h5 class="heading-5-accent no-top-margin">Feature 1</h5>
+              <p class="paragraph l bold color-accent no-top-margin">
+                Feature 1
+              </p>
               <p class="paragraph s secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
@@ -180,7 +177,9 @@
         <div class="grid columns-2">
           <div class="feature-card">
             <div class="feature-heading">
-              <h5 class="heading-5-accent no-top-margin">Feature 2</h5>
+              <p class="paragraph l bold color-accent no-top-margin">
+                Feature 2
+              </p>
               <p class="paragraph s secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
@@ -207,7 +206,9 @@
           </div>
           <div class="feature-card">
             <div class="feature-heading">
-              <h5 class="heading-5-accent no-top-margin">Feature 3</h5>
+              <p class="paragraph l bold color-accent no-top-margin">
+                Feature 3
+              </p>
               <p class="paragraph s secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique.
@@ -231,7 +232,9 @@
         <div class="grid columns-3">
           <div class="feature-card">
             <div class="feature-heading">
-              <h5 class="heading-6 no-top-margin">Feature 4</h5>
+              <p class="paragraph l bold color-accent no-top-margin">
+                Feature 4
+              </p>
               <p class="paragraph s secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique
@@ -252,7 +255,9 @@
           </div>
           <div class="feature-card">
             <div class="feature-heading">
-              <h5 class="heading-5-accent no-top-margin">Feature 5</h5>
+              <p class="paragraph l bold color-accent no-top-margin">
+                Feature 5
+              </p>
               <p class="paragraph s secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
@@ -279,7 +284,9 @@
           </div>
           <div class="feature-card">
             <div class="feature-heading">
-              <h5 class="heading-5-accent no-top-margin">Feature 6</h5>
+              <p class="paragraph l bold color-accent no-top-margin">
+                Feature 6
+              </p>
               <p class="paragraph s secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique
@@ -301,7 +308,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section>
         <div class="heading centered">
           <h3 class="no-top-margin">Cards with icons</h3>
           <p class="paragraph m secondary">
@@ -347,7 +354,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section>
         <div class="heading">
           <h3 class="no-top-margin">Block with one big image and CTA</h3>
           <p class="paragraph m secondary">
@@ -379,7 +386,7 @@
           />
         </div>
       </section>
-      <section class="section">
+      <section>
         <div class="grid columns-1/2-1 gap-xl">
           <div class="heading">
             <h3 class="no-top-margin">Description and a code block</h3>
@@ -421,7 +428,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section>
         <div class="heading centered">
           <h3 class="no-top-margin">FAQ</h3>
           <p class="paragraph m secondary">
@@ -432,7 +439,7 @@
         <div class="accordion-container">
           <details class="accordion-item" name="faq">
             <summary class="accordion-toggle">
-              <p class="ui-m-bold">How do I use this template?</p>
+              <p class="paragraph m bold">How do I use this template?</p>
               <span class="accordion-chevron fa-solid fa-chevron-down"></span>
             </summary>
             <div class="accordion-content">
@@ -447,7 +454,7 @@
 
           <details class="accordion-item" name="faq">
             <summary class="accordion-toggle">
-              <p class="ui-m-bold">
+              <p class="paragraph m bold">
                 How do I adjust the color theme to match my brand identity?
               </p>
               <span class="accordion-chevron fa-solid fa-chevron-down"></span>
@@ -479,7 +486,7 @@
 
           <details class="accordion-item" name="faq">
             <summary class="accordion-toggle">
-              <p class="ui-m-bold">How do I edit text?</p>
+              <p class="paragraph m bold">How do I edit text?</p>
               <span class="accordion-chevron fa-solid fa-chevron-down"></span>
             </summary>
             <div class="accordion-content">
@@ -492,7 +499,7 @@
 
           <details class="accordion-item" name="faq">
             <summary class="accordion-toggle">
-              <p class="ui-m-bold">How do I change images?</p>
+              <p class="paragraph m bold">How do I change images?</p>
               <span class="accordion-chevron fa-solid fa-chevron-down"></span>
             </summary>
             <div class="accordion-content">
@@ -507,7 +514,7 @@
 
           <details class="accordion-item" name="faq">
             <summary class="accordion-toggle">
-              <p class="ui-m-bold">How can I use a different icon?</p>
+              <p class="paragraph m bold">How can I use a different icon?</p>
               <span class="accordion-chevron fa-solid fa-chevron-down"></span>
             </summary>
             <div class="accordion-content">
@@ -540,7 +547,7 @@
 
           <details class="accordion-item" name="faq">
             <summary class="accordion-toggle">
-              <p class="ui-m-bold">How do I add a new page?</p>
+              <p class="paragraph m bold">How do I add a new page?</p>
               <span class="accordion-chevron fa-solid fa-chevron-down"></span>
             </summary>
             <div class="accordion-content">
@@ -563,7 +570,7 @@
 
           <details class="accordion-item" name="faq">
             <summary class="accordion-toggle">
-              <p class="ui-m-bold">
+              <p class="paragraph m bold">
                 Where can I see all the pre-designed elements this template
                 includes?
               </p>
@@ -581,7 +588,7 @@
 
           <details class="accordion-item" name="faq">
             <summary class="accordion-toggle">
-              <p class="ui-m-bold">How do I publish my website?</p>
+              <p class="paragraph m bold">How do I publish my website?</p>
               <span class="accordion-chevron fa-solid fa-chevron-down"></span>
             </summary>
             <div class="accordion-content">
@@ -623,38 +630,35 @@
             </p>
           </div>
           <div>
-            <div class="layout-vflex link-list">
-              <a href="pricing.html" class="paragraph s">Pricing</a>
-              <a href="licenses.html" class="paragraph s">Licenses</a>
-              <a href="https://mintlify.com" class="paragraph s">Docs ↗</a>
-              <a href="https://substack.com" class="paragraph s">Blog ↗</a>
-              <a href="https://wellfound.com" class="paragraph s">Careers ↗</a>
+            <div class="link-list">
+              <a href="pricing.html" class="ui s">Pricing</a>
+              <a href="licenses.html" class="ui s">Licenses</a>
+              <a href="https://mintlify.com" class="ui s">Docs ↗</a>
+              <a href="https://substack.com" class="ui s">Blog ↗</a>
+              <a href="https://wellfound.com" class="ui s">Careers ↗</a>
             </div>
           </div>
           <div>
-            <div class="layout-vflex link-list">
-              <a href="https://github.com" class="icon-link-s inline-block">
+            <div class="link-list">
+              <a href="https://github.com" class="icon-link-s ui s">
                 <div class="fa-brands fa-github icon-m color-accent"></div>
-                <div class="paragraph s pseudo-link">GitHub</div>
+                <div class="pseudo-link">GitHub</div>
               </a>
-              <a
-                href="https://www.linkedin.com"
-                class="icon-link-s inline-block"
-              >
+              <a href="https://www.linkedin.com" class="icon-link-s ui s">
                 <div class="fa-brands fa-linkedin icon-m color-accent"></div>
-                <div class="paragraph s pseudo-link">LinkedIn</div>
+                <div class="pseudo-link">LinkedIn</div>
               </a>
-              <a href="https://x.com" class="icon-link-s inline-block">
+              <a href="https://x.com" class="icon-link-s ui s">
                 <div class="fa-brands fa-x-twitter icon-m color-accent"></div>
-                <div class="paragraph s pseudo-link">X.com</div>
+                <div class="pseudo-link">X.com</div>
               </a>
             </div>
           </div>
         </div>
-        <div class="layout-hflex link-list-horizontal">
-          <a href="#" class="link-tertiary paragraph s">Privacy Policy</a>
-          <a href="#" class="link-tertiary paragraph s">Terms of Service</a>
-          <a href="#" class="link-tertiary paragraph s">Cookie Policy</a>
+        <div class="link-list-horizontal">
+          <a href="#" class="ui s tertiary">Privacy Policy</a>
+          <a href="#" class="ui s tertiary">Terms of Service</a>
+          <a href="#" class="ui s tertiary">Cookie Policy</a>
         </div>
       </section>
     </div>
