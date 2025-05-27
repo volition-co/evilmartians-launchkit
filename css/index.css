@@ -626,6 +626,7 @@ section {
   padding: var(--sizing-m-card-paddings);
   border: 1px solid var(--colors-border-level-2);
   border-radius: 16px;
+  overflow: scroll;
 }
 
 .card-code-block.dark {
