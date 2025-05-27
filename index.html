@@ -5,6 +5,41 @@
     <title>LaunchKit — the first free template for dev tools</title>
     <meta content="The first free template for dev tools" name="description" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LaunchKit" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="LaunchKit" />
+    <meta
+      property="og:description"
+      content="The first free Webflow template for dev tools"
+    />
+    <meta property="og:url" content="https://launchkit.evilmartians.io" />
+    <meta
+      property="og:image"
+      content="https://launchkit.evilmartians.io/social-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:site" content="@evilmartians" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LaunchKit" />
+    <meta
+      name="twitter:description"
+      content="The first free Webflow template for dev tools"
+    />
+    <meta
+      name="twitter:image"
+      content="https://launchkit.evilmartians.io/social-image.png"
+    />
+    <meta name="twitter:url" content="https://launchkit.evilmartians.io" />
+
+    <!-- Favicon and icons -->
+    <link rel="icon" href="images/favicon/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="images/favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,11 +47,10 @@
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link href="css/tablet.css" rel="stylesheet" type="text/css" />
     <link href="css/mobile.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="images/favicon/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="images/favicon/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" />
     <script src="js/main.js" type="text/javascript" defer></script>
   </head>
+
+  <!-- Try theme-dark of theme-light -->
   <body class="theme-dark">
     <div class="background-gradient"></div>
     <div class="page-container">
@@ -398,9 +432,11 @@
               <ol role="list">
                 <li>
                   Switching between light and dark modes.<br />Apply either the
-                  Theme Light or Theme Dark class to the Body element of any
-                  page. This will apply the theme across the entire page. If no
-                  class is set, the light theme is used by default.
+                  <span class="inline-code">theme-light</span> or
+                  <span class="inline-code">theme-dark</span> class to the
+                  <span class="inline-code">body</span> element of any page.
+                  This will apply the theme across the entire page. If no class
+                  is set, the light theme is used by default.
                 </li>
                 <li>
                   Customize the color palette.<br />Use
@@ -411,7 +447,7 @@
                   both themes match your brand’s vibe. Then, go to
                   <span class="inline-code">index.css</span> and copy-paste the
                   color codes from the tool into the corresponding
-                  <span class="inline-code">--colors-</span> variable.
+                  <span class="inline-code">--colors</span> variable.
                 </li>
               </ol>
             </div>
@@ -443,7 +479,7 @@
                 </li>
                 <li>Press <i>Copy HTML</i></li>
                 <li>
-                  Paste the copied HTML into the
+                  Paste the copied HTML inside the
                   <span class="inline-code"
                     >&lt;div class="card-code-block dark"&gt;…&lt;/div&gt;</span
                   >
@@ -467,7 +503,7 @@
               <ol role="list">
                 <li>
                   Go to
-                  <a href="https://fontawesome.com/icons"
+                  <a href="https://fontawesome.com/icons" target="_blank"
                     >fontawesome.com/icons</a
                   >
                 </li>
@@ -488,6 +524,59 @@
                 Simply copy <span class="inline-code">index.html</span>, rename
                 it, and edit it to your liking.
               </p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary class="accordion-toggle">
+              <p class="paragraph m bold">How do I add update the favicon?</p>
+              <span class="accordion-chevron fa-solid fa-chevron-down"></span>
+            </summary>
+            <div class="accordion-content">
+              <p>
+                Read
+                <a
+                  href="https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs"
+                  target="_blank"
+                  >this article</a
+                >
+                to prepare your own favicon, or use free online tools like
+                <a href="https://favicon.io/favicon-converter/" target="_blank"
+                  >this one</a
+                >.
+              </p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary class="accordion-toggle">
+              <p class="paragraph m bold">How do I add update the OG image?</p>
+              <span class="accordion-chevron fa-solid fa-chevron-down"></span>
+            </summary>
+            <div class="accordion-content">
+              <p>
+                Open Graph (OG) image, or social image, increases the
+                click-through rate of your links on social media. Follow these
+                steps to update it:
+              </p>
+              <ol role="list">
+                <li>
+                  Design your own OG image, or use free online tools like
+                  <a
+                    href="https://tailwind-generator.com/og-image-generator/generator"
+                    target="_blank"
+                    >this one</a
+                  >.
+                </li>
+                <li>
+                  Replace <span class="inline-code">social-image.png</span>
+                </li>
+                <li>
+                  If you don’t need OG image, remove all
+                  <span class="inline-code">meta</span> tags below
+                  <span class="inline-code">Open Graph</span> comment
+                </li>
+              </ol>
             </div>
           </details>
 
