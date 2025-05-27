@@ -58,3 +58,16 @@
   align-items: stretch;
   height: 100%;
 }
+
+.pricing-table {
+  width: 100%;
+}
+
+.pricing-table-row {
+  display: grid;
+  place-items: center start;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: var(--sizing-m-button-vertical-padding);
+  padding-bottom: var(--sizing-m-button-vertical-padding);
+  border-bottom: 1px solid var(--colors-border-level-2);
+}
