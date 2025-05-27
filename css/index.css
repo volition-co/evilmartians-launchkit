@@ -110,8 +110,10 @@
 
 .page-container {
   max-width: 1008px;
+  min-height: 100vh;
   margin: 0 auto;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -703,7 +705,7 @@ section {
 
 .footer {
   border-top: 1px solid var(--colors-border-level-2);
-  margin-top: 48px;
+  margin-top: auto;
   padding-top: 60px;
   padding-bottom: 24px;
 }
