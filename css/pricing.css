@@ -1,7 +1,7 @@
 .toggle-button-container {
   background-color: var(--colors-surface);
   box-shadow: 0 0 0 4px var(--colors-surface);
-  border-radius: 8px;
+  border-radius: var(--radius-m);
   display: inline-block;
   position: relative;
 }
@@ -15,7 +15,7 @@
   line-height: var(--ui-m-line-height);
   text-align: center;
   background-color: #0000;
-  border-radius: 8px;
+  border-radius: var(--radius-m);
   min-width: 120px;
 }
 
@@ -23,7 +23,7 @@
   z-index: -1;
   background-color: var(--colors-background);
   box-shadow: 0 0 0 1px var(--colors-border-level-2);
-  border-radius: 8px;
+  border-radius: var(--radius-m);
   width: 50%;
   height: 100%;
   position: absolute;
@@ -67,6 +67,7 @@
   display: grid;
   place-items: center start;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 8px;
   padding: var(--sizing-m-button-vertical-padding);
   padding-bottom: var(--sizing-m-button-vertical-padding);
   border-bottom: 1px solid var(--colors-border-level-2);

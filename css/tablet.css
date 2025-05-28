@@ -36,7 +36,7 @@
     right: 0;
     background-color: var(--colors-background);
     box-shadow: 0 0 0 1px var(--colors-border-level-2);
-    border-radius: 16px;
+    border-radius: var(--radius-l);
     margin-top: 4px;
     padding: 12px 24px;
     display: none;

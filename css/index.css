@@ -24,7 +24,8 @@
 
 :root {
   /* Fonts */
-  --text-font: "Inter Variable", Arial, sans-serif;
+  --font-text: "Inter Variable", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", Courier, monospace;
 
   /* Font metrics */
   --paragraph-xs-size: 11px;
@@ -44,15 +45,6 @@
   --ui-m-size: 16.5px;
   --ui-m-line-height: 22px;
 
-  /* Sizing */
-  --sizing-s-button-vertical-padding: 8px;
-  --sizing-s-button-horizontal-padding: 16px;
-  --sizing-m-button-vertical-padding: 12px;
-  --sizing-m-button-horizontal-padding: 24px;
-  --sizing-m-default-vertical: 12px;
-  --sizing-m-section-vertical: 60px;
-  --sizing-m-card-paddings: 24px;
-
   /* Headers */
   --header-font-weight: 600;
   --header-1-size: 66px;
@@ -70,7 +62,22 @@
   --header-5-size: 22px;
   --header-5-line-height: 24px;
 
+  /* Sizing */
+  --sizing-s-button-vertical-padding: 8px;
+  --sizing-s-button-horizontal-padding: 16px;
+  --sizing-m-button-vertical-padding: 12px;
+  --sizing-m-button-horizontal-padding: 24px;
+  --sizing-m-default-vertical: 12px;
+  --sizing-m-section-vertical: 60px;
+  --sizing-m-card-paddings: 24px;
+
   --ui-button-font-weight: 500;
+
+  /* Border radii */
+  --radius-xs: 4px;
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 16px;
 }
 
 .theme-light {
@@ -130,7 +137,7 @@ body {
 
 body {
   background-color: var(--colors-background);
-  font-family: var(--text-font);
+  font-family: var(--font-text);
   color: var(--colors-text-primary);
   font-size: var(--paragraph-m-size);
   line-height: var(--paragraph-m-line-height);
@@ -321,7 +328,7 @@ section {
   line-height: var(--ui-m-line-height);
   font-weight: var(--ui-button-font-weight);
   text-align: center;
-  border-radius: 12px;
+  border-radius: var(--radius-m);
   gap: 8px;
   justify-content: center;
   align-items: center;
@@ -378,7 +385,7 @@ section {
   &.compact {
     padding: var(--sizing-s-button-vertical-padding)
       var(--sizing-s-button-horizontal-padding);
-    border-radius: 8px;
+    border-radius: var(--radius-s);
   }
 }
 
@@ -474,7 +481,7 @@ section {
   box-shadow: 0 0 0 1px var(--colors-border-level-2);
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
-  border-radius: 16px;
+  border-radius: var(--radius-l);
   max-width: 1008px;
   padding: 12px 12px 12px 16px;
   z-index: 1000;
@@ -491,7 +498,7 @@ section {
   font-size: var(--ui-m-size);
   line-height: var(--ui-m-line-height);
   font-weight: var(--ui-button-font-weight);
-  border-radius: 8px;
+  border-radius: var(--radius-s);
   padding: 8px 16px;
   display: inline-block;
   text-decoration: none;
@@ -545,7 +552,7 @@ section {
 .feature-card {
   padding: var(--sizing-m-card-paddings);
   background-color: var(--colors-surface);
-  border-radius: 16px;
+  border-radius: var(--radius-l);
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -605,7 +612,7 @@ section {
 .card-code-block {
   padding: var(--sizing-m-card-paddings);
   border: 1px solid var(--colors-border-level-2);
-  border-radius: 16px;
+  border-radius: var(--radius-l);
   overflow: auto;
 
   &.dark {
@@ -698,11 +705,11 @@ section {
 }
 
 .inline-code {
-  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  font-family: var(--font-mono);
   font-size: var(--paragraph-s-size);
   line-height: var(--paragraph-s-line-height);
   background-color: var(--colors-surface);
   padding: 2px 4px;
-  border-radius: 4px;
+  border-radius: var(--radius-xs);
   color: var(--colors-text-secondary);
 }
