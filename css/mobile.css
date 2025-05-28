@@ -26,9 +26,9 @@
     --header-5-line-height: 20px;
 
     /* Sizing */
-    --sizing-m-section-vertical: 24px;
-    --sizing-m-button-vertical-padding: 8px;
-    --sizing-m-card-paddings: 12px;
+    --space-section: 24px;
+    --space-button-m-vertical: 8px;
+    --space-card-m: 12px;
 
     --radius-m: 8px;
     --radius-l: 12px;
