@@ -42,7 +42,7 @@
   }
 
   .nav-container {
-    padding: 8px;
+    padding: 8px 8px 8px 12px;
   }
 
   .footer {
@@ -85,15 +85,8 @@
     display: flex;
   }
 
-  .button-group-inline.mobile-only {
-    gap: 12px;
-    flex-flow: column;
-    margin-top: 12px;
-    display: flex;
-  }
-
   .nav-menu {
-    padding: 0 12px;
+    padding: 12px;
   }
 
   .clients-container {

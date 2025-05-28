@@ -28,11 +28,6 @@
     display: inline-flex;
   }
 
-  .button-group-inline.hide-on-desktop {
-    flex-flow: column;
-    display: flex;
-  }
-
   .nav-menu {
     position: absolute;
     top: calc(100% + 6px);
