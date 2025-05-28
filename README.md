@@ -11,6 +11,8 @@ Read more about its features: https://launchkit.evilmartians.io
 3. It includes all the essential elements to showcase your product. If something’s missing, just create an issue.
 4. The template is mobile-friendly and uses a market-standard layout to ensure great usability.
 
+![Screenshot](https://github.com/user-attachments/assets/0f49093c-f895-471c-b478-1525e380a3a2)
+
 ## How to use it?
 
 Simply clone the repo to your account and edit it:
