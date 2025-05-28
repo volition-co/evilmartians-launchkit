@@ -43,6 +43,8 @@
 
   .nav-container {
     padding: 8px 8px 8px 12px;
+    top: 12px;
+    margin-top: 12px;
   }
 
   .footer {

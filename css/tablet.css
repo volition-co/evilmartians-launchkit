@@ -5,13 +5,13 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1056px) {
   .page-container {
     max-width: 728px;
     padding: 0 24px;
   }
 
-  .heading.first-screen {
+  .heading.hero {
     max-width: 100%;
   }
 
