@@ -59,6 +59,17 @@
   .cards-with-icons-container {
     grid-template-columns: 1fr;
   }
+
+  .card-with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+
+    & .icon {
+      margin-top: 24px;
+    }
+  }
 }
 
 @media screen and (max-width: 479px) {

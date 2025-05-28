@@ -45,16 +45,18 @@
   --ui-m-line-height: 22px;
 
   /* Sizing */
+  --sizing-s-button-vertical-padding: 8px;
+  --sizing-s-button-horizontal-padding: 16px;
+  --sizing-m-button-vertical-padding: 12px;
+  --sizing-m-button-horizontal-padding: 24px;
   --sizing-m-default-vertical: 12px;
   --sizing-m-section-vertical: 60px;
   --sizing-m-card-paddings: 24px;
-  --sizing-m-button-vertical-padding: 12px;
-  --sizing-m-button-horizontal-padding: 24px;
-  --sizing-s-button-vertical-padding: 8px;
-  --sizing-s-button-horizontal-padding: 16px;
+
+  /* Headers */
+  --header-font-weight: 600;
   --header-1-size: 66px;
   --header-1-line-height: 64px;
-  --header-font-weight: 600;
   --header-1-letter-spacing: -1.98px;
   --header-2-size: 49.5px;
   --header-2-line-height: 52px;
@@ -67,6 +69,7 @@
   --header-4-letter-spacing: -0.275px;
   --header-5-size: 22px;
   --header-5-line-height: 24px;
+
   --ui-button-font-weight: 500;
 }
 
@@ -446,6 +449,7 @@ section {
 
   &.xl {
     font-size: var(--paragraph-xl-size);
+    line-height: var(--paragraph-xl-line-height) !important;
   }
 }
 
@@ -578,17 +582,9 @@ section {
 }
 
 .card-with-icon {
-  border-radius: 24px;
-
-  &.horizontal {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-  }
-
-  &.horizontal .icon {
-    margin-top: 24px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .cards-with-icons-container {
