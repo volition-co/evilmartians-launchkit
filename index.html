@@ -323,9 +323,9 @@
             <div class="accordion-content">
               <p>
                 First, clone the template to your account. Then, decide which
-                blocks make sense for your landing and delete the rest.
-                Replace all "Lorem ipsum" text with your copy, upload your
-                images, and set up actions for the buttons and links.
+                blocks make sense for your landing and delete the rest. Replace
+                all "Lorem ipsum" text with your copy, upload your images, and
+                set up actions for the buttons and links.
               </p>
             </div>
           </details>
@@ -341,19 +341,21 @@
               <p>You can update the color theme in two ways:</p>
               <ol role="list">
                 <li>
-                  Switching between light and dark modes.<br />Apply either
-                  the Theme Light or Theme Dark class to the Body element of
-                  any page. This will apply the theme across the entire page.
-                  If no class is set, the light theme is used by default.
+                  Switching between light and dark modes.<br />Apply either the
+                  <span class="inline-code">theme-light</span> or
+                  <span class="inline-code">theme-dark</span> class to the
+                  <span class="inline-code">body</span> element of any page.
+                  This will apply the theme across the entire page. If no class
+                  is set, the light theme is used by default.
                 </li>
                 <li>
                   Customize the color palette.<br />Use
                   <a href="https://codepen.io/romanshamin/full/QwWgNLN">this tool</a>
-                  to tweak the overall color theme. Adjust the two sliders
-                  until both themes match your brand’s vibe. Then, go to
-                  <span class="inline-code">index.css</span> and copy-paste
-                  the color codes from the tool into the corresponding
-                  <span class="inline-code">--colors-</span> variable.
+                  to tweak the overall color theme. Adjust the two sliders until
+                  both themes match your brand’s vibe. Then, go to
+                  <span class="inline-code">index.css</span> and copy-paste the
+                  color codes from the tool into the corresponding
+                  <span class="inline-code">--colors</span> variable.
                 </li>
               </ol>
             </div>
@@ -427,6 +429,50 @@
                 Simply copy <span class="inline-code">index.html</span>,
                 rename it, and edit it to your liking.
               </p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary class="accordion-toggle">
+              <p class="paragraph m bold">How do I add update the favicon?</p>
+              <span class="accordion-chevron fa-solid fa-chevron-down"></span>
+            </summary>
+            <div class="accordion-content">
+              <p>
+                Read
+                <a href="https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs"
+                  target="_blank">this article</a>
+                to prepare your own favicon, or use free online tools like
+                <a href="https://favicon.io/favicon-converter/" target="_blank">this one</a>.
+              </p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary class="accordion-toggle">
+              <p class="paragraph m bold">How do I add update the OG image?</p>
+              <span class="accordion-chevron fa-solid fa-chevron-down"></span>
+            </summary>
+            <div class="accordion-content">
+              <p>
+                Open Graph (OG) image, or social image, increases the
+                click-through rate of your links on social media. Follow these
+                steps to update it:
+              </p>
+              <ol role="list">
+                <li>
+                  Design your own OG image, or use free online tools like
+                  <a href="https://tailwind-generator.com/og-image-generator/generator" target="_blank">this one</a>.
+                </li>
+                <li>
+                  Replace <span class="inline-code">social-image.png</span>
+                </li>
+                <li>
+                  If you don’t need OG image, remove all
+                  <span class="inline-code">meta</span> tags below
+                  <span class="inline-code">Open Graph</span> comment
+                </li>
+              </ol>
             </div>
           </details>
 
