@@ -1,0 +1,113 @@
+@media screen and (max-width: 767px) {
+  body {
+    /* Font metrics */
+    --paragraph-m-size: 15px;
+    --paragraph-m-line-height: 24px;
+    --paragraph-l-size: 20px;
+    --paragraph-l-line-height: 28px;
+    --paragraph-l-letter-spacing: 0px;
+    --ui-m-size: 15px;
+    --ui-m-line-height: 20px;
+
+    /* Headers */
+    --header-1-size: 38.5px;
+    --header-1-line-height: 36px;
+    --header-1-letter-spacing: -0.77px;
+    --header-2-size: 27.5px;
+    --header-2-line-height: 28px;
+    --header-2-letter-spacing: -0.275px;
+    --header-3-size: 22px;
+    --header-3-line-height: 24px;
+    --header-3-letter-spacing: 0px;
+    --header-4-size: 19.2px;
+    --header-4-line-height: 22px;
+    --header-4-letter-spacing: 0px;
+    --header-5-size: 16.5px;
+    --header-5-line-height: 20px;
+
+    /* Sizing */
+    --space-section: 24px;
+    --space-button-m-vertical: 8px;
+    --space-card-m: 12px;
+
+    --radius-m: 8px;
+    --radius-l: 12px;
+  }
+
+  .page-container {
+    max-width: none;
+  }
+
+  .navbar {
+    margin-top: 12px;
+    top: 12px;
+  }
+
+  .nav-container {
+    padding: 8px 8px 8px 12px;
+    top: 12px;
+    margin-top: 12px;
+  }
+
+  .footer {
+    margin: 24px 0;
+  }
+
+  .button-group {
+    gap: 8px;
+  }
+
+  .columns-2,
+  .columns-3,
+  .columns-1\/2-1,
+  .cards-with-icons-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+
+    & .icon {
+      margin-top: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .page-container {
+    padding: 0 16px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .nav-link {
+    display: flex;
+  }
+
+  .nav-menu {
+    padding: 12px;
+  }
+
+  .clients-container {
+    gap: 24px;
+    padding: 12px 0;
+  }
+
+  .accordion-toggle {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footer-menu {
+    grid-template-columns: 2fr;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+}
