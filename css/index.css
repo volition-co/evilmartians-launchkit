@@ -45,6 +45,23 @@
   --ui-m-size: 16.5px;
   --ui-m-line-height: 22px;
 
+  /* Colors */
+  --colors-background: white;
+  --colors-surface: #99a3ae14;
+  --colors-text-primary: #363e48;
+  --colors-text-secondary: #757a7f;
+  --colors-text-tertiary: #a7acb2;
+  --colors-accent: #0081ff;
+  --colors-accent-b: #0081ff29;
+  --colors-on-accent: white;
+  --colors-button-primary-bg-hover: #0088f0d9;
+  --colors-button-secondary-bg-hover: #0088f033;
+  --colors-border-level-2: #99a3ae29; /* TODO: rename */
+  --colors-border-level-3: #99a3ae52; /* TODO: rename */
+  --colors-background-blur: #ffffffe6; /* TODO: use background */
+  --colors-gradient-bg-start: #0081ff14;
+  --colors-gradient-bg-end: #0081ff00;
+
   /* Headers */
   --header-font-weight: 600;
   --header-1-size: 66px;
@@ -78,24 +95,6 @@
   --radius-s: 8px;
   --radius-m: 12px;
   --radius-l: 16px;
-}
-
-.theme-light {
-  --colors-background: white;
-  --colors-surface: #99a3ae14;
-  --colors-text-primary: #363e48;
-  --colors-text-secondary: #757a7f;
-  --colors-text-tertiary: #a7acb2;
-  --colors-accent: #0081ff;
-  --colors-accent-b: #0081ff29;
-  --colors-on-accent: white;
-  --colors-button-primary-bg-hover: #0088f0d9;
-  --colors-button-secondary-bg-hover: #0088f033;
-  --colors-border-level-2: #99a3ae29; /* TODO: rename */
-  --colors-border-level-3: #99a3ae52; /* TODO: rename */
-  --colors-background-blur: #ffffffe6; /* TODO: use background */
-  --colors-gradient-bg-start: #0081ff14;
-  --colors-gradient-bg-end: #0081ff00;
 }
 
 .theme-dark {
