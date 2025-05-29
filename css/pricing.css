@@ -11,8 +11,8 @@
   padding-top: var(--space-button-s-vertical);
   padding-bottom: var(--space-button-s-vertical);
   color: var(--color-text-primary);
-  font-size: var(--ui-m-size);
-  line-height: var(--ui-m-line-height);
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-ui-m);
   text-align: center;
   background-color: #0000;
   border-radius: var(--radius-m);

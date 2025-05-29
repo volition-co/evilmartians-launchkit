@@ -1,29 +1,23 @@
 @media screen and (max-width: 767px) {
   body {
+    /* Font sizes */
+    --font-size-l: 19.25px;
+    --font-size-xl: 33px;
+    --font-size-xxl: 44px;
+
     /* Font metrics */
-    --paragraph-m-size: 15px;
-    --paragraph-m-line-height: 24px;
-    --paragraph-l-size: 20px;
-    --paragraph-l-line-height: 28px;
-    --paragraph-l-letter-spacing: 0px;
-    --ui-m-size: 15px;
-    --ui-m-line-height: 20px;
+    --line-height-paragraph-l: 24px;
+    --letter-spacing-paragraph-l: -0.2px;
+    --line-height-paragraph-xl: 40px;
+    --letter-spacing-paragraph-xl: -0.5px;
 
     /* Headers */
-    --header-1-size: 38.5px;
-    --header-1-line-height: 36px;
-    --header-1-letter-spacing: -0.77px;
-    --header-2-size: 27.5px;
-    --header-2-line-height: 28px;
-    --header-2-letter-spacing: -0.275px;
-    --header-3-size: 22px;
-    --header-3-line-height: 24px;
-    --header-3-letter-spacing: 0px;
-    --header-4-size: 19.2px;
-    --header-4-line-height: 22px;
-    --header-4-letter-spacing: 0px;
-    --header-5-size: 16.5px;
-    --header-5-line-height: 20px;
+    --line-height-h1: 48px;
+    --letter-spacing-h1: -1.5px;
+    --line-height-h2: 36px;
+    --letter-spacing-h2: -1px;
+    --line-height-h3: 22px;
+    --letter-spacing-h3: -0.75px;
 
     /* Sizing */
     --space-section: 24px;
@@ -36,6 +30,7 @@
 
   .page-container {
     max-width: none;
+    padding: 0 16px;
   }
 
   .navbar {
