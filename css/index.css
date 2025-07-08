@@ -87,6 +87,8 @@
   --color-background-blur: #ffffffe6;
   --color-gradient-bg-start: #0081ff14;
   --color-gradient-bg-end: #0081ff00;
+  --color-gradient-promo-start: #800069;
+  --color-gradient-promo-end: #005196;
 }
 
 .theme-light {
@@ -105,6 +107,8 @@
   --color-background-blur: #ffffffe6;
   --color-gradient-bg-start: #0081ff14;
   --color-gradient-bg-end: #0081ff00;
+  --color-gradient-promo-start: #ffd2f7;
+  --color-gradient-promo-end: #b9dfff;
 }
 
 .theme-dark {
@@ -125,6 +129,8 @@
   --color-background-blur: #1f1f20e6;
   --color-gradient-bg-start: #0081ff1f;
   --color-gradient-bg-end: #0081ff00;
+  --color-gradient-promo-start: #800069;
+  --color-gradient-promo-end: #005196;
 }
 
 .page-container {
@@ -231,6 +237,29 @@ img {
 
 section {
   padding: var(--space-section) 0;
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin-bottom: var(--space-default);
+  border: 1px solid var(--color-border-level-3);
+  border-radius: var(--radius-l);
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-s);
+  text-align: center;
+  object-fit: fill;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2px 12px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-text-primary);
+  }
 }
 
 .heading {
@@ -521,6 +550,16 @@ section {
   width: 100%;
   height: 80vh;
   z-index: -10;
+}
+
+.promo-cta {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-gradient-promo-start),
+    var(--color-gradient-promo-end)
+  );
+  border-radius: 16px;
+  margin-bottom: var(--space-section);
 }
 
 .image-wide {
