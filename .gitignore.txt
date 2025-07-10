@@ -23,3 +23,6 @@ dist-ssr
 
 # Build cache manifests
 *.tsbuildinfo
+
+# System
+.DS_Store
