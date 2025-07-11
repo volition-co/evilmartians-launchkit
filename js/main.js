@@ -1,6 +1,6 @@
 function handleMobileNav() {
   const mobileToggle = document.querySelector("[data-mobile-toggle]");
-  const navigation = document.querySelector("[ data-navigation]");
+  const navigation = document.querySelector("[data-navigation]");
 
   mobileToggle.addEventListener("click", () => {
     navigation.classList.toggle("open");
