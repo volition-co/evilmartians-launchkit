@@ -1,4 +1,4 @@
-<img width="830" alt="Github image" src="https://github.com/user-attachments/assets/11004a75-6962-46ed-9a50-b0abe7786e2d" />
+<img width="830" height="396" alt="Github image" src="https://github.com/user-attachments/assets/d8630eb0-ba98-4939-851f-b3ec44b2d286" />
 
 LaunchKit is a free HTML landing page template specifically designed for developer tools and open source products.
 
@@ -11,7 +11,7 @@ Read more about its features: https://launchkit.evilmartians.io
 3. It includes all the essential elements to showcase your product. If something’s missing, just create an issue.
 4. The template is mobile-friendly and uses a market-standard layout to ensure great usability.
 
-<img width="1280" alt="template-overview" src="https://github.com/user-attachments/assets/6fc35221-766e-45c0-9d38-327b4e425dc2" />
+<img width="1200" height="800" alt="hero-shot" src="https://github.com/user-attachments/assets/26ab820d-e414-4d3d-b1ad-8a0c49e96287" />
 
 
 ## How to use it?
