@@ -1,0 +1,111 @@
+- content_for :nav_class, "sticky top-0 z-10"
+- content_for :main_class, "dark:bg-border-depth"
+
+ruby:
+    grid_classes = "grid grid-cols-1 gap-8 py-8"
+    section_heading_classes = "flex flex-col gap-2 text-center md:text-left md:py-8"
+    feature_heading_classes = "text-2xl font-semibold mb-0 text-balance text-pretty"
+
+.container.mx-auto.px-4.lg:max-w-4xl.xl:max-w-5xl
+    .flex.flex-col.gap-4
+        = render "hero_section"
+        hr.text-divider
+        div class="#{grid_classes} md:grid-cols-[4fr_3fr]"
+            div class="#{section_heading_classes} md:order-2"
+                h2 class=feature_heading_classes
+                    | Work On Multiple Tickets at Once
+                p.text-content.text-pretty
+                    | Give high level instructions or specific requirements. Add images for additional detail.
+            .flex.justify-center
+                = video_tag("tickets_optimized_.mp4", \
+                    width: "924px", height: "1080px",
+                    autoplay: true, loop: true, muted: true, playsinline: true, \
+                    onclick: "this.paused ? this.play() : this.pause();", \
+                    class: "rounded-lg max-h-[462px] md:max-h-none cursor-pointer",)
+        hr.text-divider
+        div class="#{grid_classes} gap-8 md:grid-cols-[3fr_4fr]"
+            div class=section_heading_classes
+                h2 class=feature_heading_classes
+                    | Launch Many Agents for Each Ticket
+                div
+                    p.text-content.text-pretty.inline
+                        | Select your favorite agent and how many times you want it to run in parallel.
+                    span.md:hidden = " "
+                    p.text-content.inline.md:block
+                        = "We support "
+                        span.whitespace-nowrap
+                            = icon "claude", class: "w-4 h-4 inline mr-1"
+                            span.font-semibold = "Claude Code"
+                        span = ", "
+                        span.whitespace-nowrap
+                            = icon "amp", class: "w-4 h-4 inline mr-1"
+                            span.font-semibold = "Amp"
+                        span = ", "
+                        span.whitespace-nowrap
+                            = icon "gemini", class: "w-4 h-4 inline mr-1"
+                            span.font-semibold = "Gemini"
+                        span = ", and "
+                        span.whitespace-nowrap
+                            = icon "openai", class: "w-4 h-4 inline mr-1"
+                            span.font-semibold = "OpenAI Codex"
+                        span = "."
+            .flex.justify-center
+                = video_tag("launch_.mp4",
+                width: "926px", height: "1080px",
+                autoplay: true, loop: true, muted: true, playsinline: true, \
+                onclick: "this.paused ? this.play() : this.pause();", \
+                class: "rounded-lg max-h-[462px] md:max-h-none cursor-pointer",)
+        hr.text-divider
+        div class="#{grid_classes} md:grid-cols-2"
+            div class="#{section_heading_classes} md:order-2"
+                h2 class=feature_heading_classes
+                    | Chat with Your Agents
+                p.text-content.text-pretty.md:hidden
+                    | See real-time work log and chat with your agents. Quickly review changes with a built-in
+                    |  diff viewer.
+                .hidden.md:block
+                    p.text-content See real-time work log and chat with your agents.
+                    p.text-content Quickly review changes with a built-in diff viewer.
+            .flex.justify-center
+                = video_tag("chat_and_diff_light_optimized_.mp4", \
+                    autoplay: true, loop: true, muted: true, playsinline: true, \
+                    onclick: "this.paused ? this.play() : this.pause();", \
+                    class: "dark:hidden max-h-[540px] cursor-pointer",)
+                = video_tag("chat_and_diff_dark_optimized_.mp4", \
+                    autoplay: true, loop: true, muted: true, playsinline: true, \
+                    onclick: "this.paused ? this.play() : this.pause();", \
+                    class: "hidden dark:block max-h-[540px] cursor-pointer",)
+        hr.text-divider
+        div class="#{grid_classes} md:grid-cols-[1fr_2fr]"
+            div class="#{section_heading_classes}"
+                h2 class=feature_heading_classes
+                    | Flip Between Live Previews
+                p.text-content Each implementation has its own running app, one click away.
+            .flex.justify-center.max-w-md.mx-auto
+                = responsive_picture(desktop: 'previews.webp', mobile: 'previews_mobile.webp', alt: 'Desktop view of multiple live application previews running simultaneously')
+        hr.text-divider
+        div class="#{grid_classes} md:grid-cols-[4fr_3fr]"
+            div class="#{section_heading_classes} md:order-2"
+                h2 class=feature_heading_classes
+                    | GitHub Integration
+                p.text-content When you've found an implementation that works for you, a single click makes a GitHub PR.
+            .flex.justify-center.max-w-md.mx-auto
+              = responsive_picture(desktop: 'pr.webp', mobile: 'pr_mobile.webp', alt: 'Desktop GitHub pull request creation interface showing one-click PR submission', classes: 'md:order-1')
+        hr.text-divider
+        div class="#{grid_classes} md:grid-cols-2"
+            div class="#{section_heading_classes}"
+                h2 class=feature_heading_classes
+                    | Bring Your Own Repos & Keys
+                .text-content
+                    p.inline Superconductor is for working devs, not vibe-coders.
+                    span.md:hidden = " "
+                    p.inline.md:block
+                    | Connect to your existing repos, and bring your own API keys or connect to your
+                    |  Claude Pro/Max plan.
+            .flex.justify-center
+                = responsive_picture(desktop: 'connect.webp', mobile: 'connect_mobile.webp', alt: 'Desktop interface showing repository and API key connection settings', classes: 'rounded-lg max-h-[640px] md:max-h-none')
+        hr.text-divider
+        .text-center.pb-16.mt-8
+            h2.mb-4.font-bold Onboarding Teams Now
+            = link_to waitlist_path, class: "du-btn du-btn-primary du-btn-lg" do
+                | Request Early Access
