@@ -938,7 +938,7 @@ a:has(.logo-text) {
 
 .responsive-video {
   width: 100%;
-  min-height: 680px;
+  min-height: 400px;
   max-width: 1920px;
   max-height: 1260px;
   object-fit: cover;
