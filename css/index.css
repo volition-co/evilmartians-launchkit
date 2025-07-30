@@ -418,7 +418,7 @@ section {
   display: flex;
 
   &.hero {
-    padding-bottom: 36px;
+    padding-bottom: 0px;
   }
 
   &.centered {
