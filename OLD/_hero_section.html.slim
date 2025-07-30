@@ -1,0 +1,62 @@
+.flex.flex-col.items-center.text-center.gap-4.my-4
+    h1.text-4xl.font-bold.mb-4.text-pretty.z-1
+        | Ship Faster with Parallel Coding Agents
+    .grid(class="grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8" data-controller="splash-hero")
+        .flex-col.gap-4.hidden.lg:flex
+            .flex.flex-col.gap-2
+                h2.text-xl.font-semibold.mb-0
+                    | Create Tickets
+                .flex.flex-col.gap-4.p-4.bg-base-200.dark:bg-base-300.shadow-lg.text-sm.items-start(
+                  class="rounded-lg border-divider border dark:border-none")
+                    .text-title Spruce up my landing page
+                    .w-full.flex.justify-end
+                        .flex.gap-1.items-center.bg-primary.text-primary-content.px-2.py-1.rounded.text-xs
+                            = icon "plus", class: "w-3 h-3"
+                            .font-semibold Create ticket
+            .flex.flex-col.gap-2
+                h2.text-xl.font-semibold.mb-0
+                    | Launch Agents
+                .flex.flex-col.w-full.bg-base-200.dark:bg-base-300.rounded-lg.shadow-lg.pt-2.border-divider.border.dark:border-none
+                    = render "agent", agent_id: "agent-1", \
+                        icon_name: "claude", title: "Claude Code", subtitle: "Sonnet", \
+                        count: 2, css_class: "agent-highlight"
+                    = render "agent", agent_id: "agent-2", \
+                        icon_name: "claude", title: "Claude Code", subtitle: "Opus", count: 1
+                    = render "agent", agent_id: "agent-3", \
+                        icon_name: "openai", title: "OpenAI", subtitle: "Codex", count: 1
+                    = render "agent", agent_id: "agent-4", \
+                        icon_name: "amp", title: "AMP", subtitle: "", count: 1
+                    = render "agent", agent_id: "agent-5", \
+                        icon_name: "gemini", title: "Gemini", subtitle: "", count: 1
+                    .mx-4.mt-1.mb-4
+                        .bg-primary.w-full.py-1.text-white.font-semibold.flex.items-center.justify-center.gap-1.text-sm.rounded
+                            span Launch 6
+        .flex.flex-col.gap-0.w-full.items-center.mb-8.lg:mb-10
+            h2.text-xl.font-semibold.z-1.hidden.lg:block Review Changes
+            .flex.flex-col.implementation-stack
+                - (1..6).each do |i|
+                    .implementation-card(class="pos-#{i - 1}"
+                                         data-pos=(i - 1)
+                                         data-splash-hero-target="card")
+                        = image_tag "implementation_#{i}_light.jpg", class: "dark:hidden", width: 1600, height: 900
+                        = image_tag "implementation_#{i}_dark.jpg", class: "hidden dark:block", width: 1600, height: 900
+                = image_tag "implementation_1_light.jpg", class: "opacity-0", width: 1600, height: 900
+                .grid.grid-cols-3.absolute.-bottom-8.z-1.w-full.text-sm.text-label
+                    .flex.gap-1.items-center.justify-center
+                        = icon "comment", class: "w-3 h-3"
+                        span Chat
+                    .flex.gap-1.items-center.justify-center
+                        = icon "eye", class: "w-3 h-3"
+                        span Preview
+                    .flex.gap-1.items-center.justify-center
+                        = icon "code", class: "w-3 h-3"
+                        span Diff
+    p.text-lg.text-content.max-w-2xl.z-1
+        ' Superconductor lets you run
+        strong.text-primary many coding agents in parallel
+        | , with a live browser preview for each one, on desktop or mobile.
+    .flex.flex-col.sm:flex-row.gap-2.justify-center.items-center
+        = link_to waitlist_path, class: "du-btn du-btn-primary du-btn-lg w-full sm:w-auto" do
+            | Request Early Access
+        = link_to log_in_path, class: "du-btn du-btn-secondary du-btn-lg w-full sm:w-auto" do
+            | Sign In
