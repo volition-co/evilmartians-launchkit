@@ -80,22 +80,6 @@
 }
 
 @font-face {
-  font-family: Inter Variable;
-  src: url("../fonts/InterVariable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Inter Variable;
-  src: url("../fonts/InterVariable-Italic.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
   font-family: JetBrains Mono;
   src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf") format("woff2");
   font-weight: 100 900;
@@ -105,7 +89,7 @@
 
 :root {
   /* Fonts */
-  --font-text: "Euclid Circular B", "Inter Variable", Arial, sans-serif;
+  --font-text: "Euclid Circular B", Arial, sans-serif;
   --font-mono: "JetBrains Mono", "Courier New", Courier, monospace;
 
   /* Font sizes */
@@ -160,6 +144,7 @@
   --color-text-tertiary-light: #a7acb2;
   --color-accent-light: #0081ff;
   --color-accent-b-light: #0081ff29;
+  --color-highlight-light: rgb(0, 207, 124);
   --color-on-accent-light: white;
   --color-button-primary-bg-hover-light: #0088f0d9;
   --color-button-secondary-bg-hover-light: #0088f033;
@@ -172,21 +157,22 @@
   --color-gradient-promo-end-light: #005196;
 
   /* Dark theme colors */
-  --color-background-dark: #1f1f20;
+  --color-background-dark: #0f0f0f;
   --color-surface-dark: #9aa3af14;
-  --color-text-primary-dark: #e5f0fc;
-  --color-text-secondary-dark: #c2c7cd;
+  --color-text-primary-dark: #ffffff;
+  --color-text-secondary-dark: #ffffff97;
   --color-text-tertiary-dark: #94999f;
-  --color-accent-dark: #0081ff;
-  --color-accent-b-dark: #0081ff29;
+  --color-accent-dark: #a02ce8;
+  --color-accent-b-dark: #a02ce829;
+  --color-highlight-dark: rgb(0, 207, 124);
   --color-on-accent-dark: white;
-  --color-button-primary-bg-hover-dark: #0088f0d9;
-  --color-button-secondary-bg-hover-dark: #0088f04d;
+  --color-button-primary-bg-hover-dark: #9022d4d9;
+  --color-button-secondary-bg-hover-dark: #9022d44d;
   --color-border-level-2-dark: #9aa3af29;
   --color-border-level-3-dark: #9aa3af52;
-  --color-background-blur-dark: #1f1f20e6;
-  --color-gradient-bg-start-dark: #0081ff1f;
-  --color-gradient-bg-end-dark: #0081ff00;
+  --color-background-blur-dark: #0f0f0fe6;
+  --color-gradient-bg-start-dark: #9d00ff1f;
+  --color-gradient-bg-end-dark: #9d00ff00;
   --color-gradient-promo-start-dark: #800069;
   --color-gradient-promo-end-dark: #005196;
 
@@ -198,9 +184,12 @@
   --color-text-tertiary: var(--color-text-tertiary-light);
   --color-accent: var(--color-accent-light);
   --color-accent-b: var(--color-accent-b-light);
+  --color-highlight: var(--color-highlight-light);
   --color-on-accent: var(--color-on-accent-light);
   --color-button-primary-bg-hover: var(--color-button-primary-bg-hover-light);
-  --color-button-secondary-bg-hover: var(--color-button-secondary-bg-hover-light);
+  --color-button-secondary-bg-hover: var(
+    --color-button-secondary-bg-hover-light
+  );
   --color-border-level-2: var(--color-border-level-2-light);
   --color-border-level-3: var(--color-border-level-3-light);
   --color-background-blur: var(--color-background-blur-light);
@@ -222,8 +211,11 @@
     --color-accent: var(--color-accent-dark);
     --color-accent-b: var(--color-accent-b-dark);
     --color-on-accent: var(--color-on-accent-dark);
+    --color-highlight: var(--color-highlight-dark);
     --color-button-primary-bg-hover: var(--color-button-primary-bg-hover-dark);
-    --color-button-secondary-bg-hover: var(--color-button-secondary-bg-hover-dark);
+    --color-button-secondary-bg-hover: var(
+      --color-button-secondary-bg-hover-dark
+    );
     --color-border-level-2: var(--color-border-level-2-dark);
     --color-border-level-3: var(--color-border-level-3-dark);
     --color-background-blur: var(--color-background-blur-dark);
@@ -245,9 +237,12 @@
   --color-text-tertiary: var(--color-text-tertiary-light);
   --color-accent: var(--color-accent-light);
   --color-accent-b: var(--color-accent-b-light);
+  --color-highlight: var(--color-highlight-light);
   --color-on-accent: var(--color-on-accent-light);
   --color-button-primary-bg-hover: var(--color-button-primary-bg-hover-light);
-  --color-button-secondary-bg-hover: var(--color-button-secondary-bg-hover-light);
+  --color-button-secondary-bg-hover: var(
+    --color-button-secondary-bg-hover-light
+  );
   --color-border-level-2: var(--color-border-level-2-light);
   --color-border-level-3: var(--color-border-level-3-light);
   --color-background-blur: var(--color-background-blur-light);
@@ -270,7 +265,9 @@
   --color-accent-b: var(--color-accent-b-dark);
   --color-on-accent: var(--color-on-accent-dark);
   --color-button-primary-bg-hover: var(--color-button-primary-bg-hover-dark);
-  --color-button-secondary-bg-hover: var(--color-button-secondary-bg-hover-dark);
+  --color-button-secondary-bg-hover: var(
+    --color-button-secondary-bg-hover-dark
+  );
   --color-border-level-2: var(--color-border-level-2-dark);
   --color-border-level-3: var(--color-border-level-3-dark);
   --color-background-blur: var(--color-background-blur-dark);
@@ -938,4 +935,26 @@ video {
 
 .image-wide img {
   border-radius: var(--radius-s);
+}
+
+.text-highlight {
+  color: var(--color-highlight);
+  text-underline-offset: 2px;
+  -webkit-text-decoration: underline wavy;
+  text-decoration: underline wavy;
+  -webkit-text-decoration-color: color-mix(
+    in srgb,
+    var(--color-highlight) 25%,
+    transparent
+  );
+  text-decoration-color: color-mix(
+    in srgb,
+    var(--color-highlight) 25%,
+    transparent
+  );
+  border: 1px #000;
+}
+
+.rounded {
+  border-radius: 16px;
 }
