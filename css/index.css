@@ -415,7 +415,7 @@ section {
   display: flex;
 
   &.hero {
-    padding-bottom: 36px;
+    padding-bottom: 0px;
   }
 
   &.centered {
@@ -925,10 +925,6 @@ a:has(.logo-text) {
   gap: 8px;
 }
 
-video {
-  max-height: 80vh;
-}
-
 .feature-card img {
   border-radius: var(--radius-s);
 }
@@ -957,4 +953,13 @@ video {
 
 .rounded {
   border-radius: 16px;
+}
+
+.responsive-video {
+  width: 100%;
+  min-height: 400px;
+  max-width: 1920px;
+  max-height: 1260px;
+  object-fit: cover;
+  border-radius: var(--radius-s);
 }
