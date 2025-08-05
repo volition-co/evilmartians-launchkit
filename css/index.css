@@ -142,11 +142,11 @@
   --color-text-primary-light: #363e48;
   --color-text-secondary-light: #757a7f;
   --color-text-tertiary-light: #a7acb2;
-  --color-accent-light: #0081ff;
+  --color-accent-light: #a02ce8;
   --color-accent-b-light: #0081ff29;
   --color-highlight-light: rgb(0, 207, 124);
   --color-on-accent-light: white;
-  --color-button-primary-bg-hover-light: #0088f0d9;
+  --color-button-primary-bg-hover-light: #9022d4d9;
   --color-button-secondary-bg-hover-light: #0088f033;
   --color-border-level-2-light: #99a3ae29;
   --color-border-level-3-light: #99a3ae52;
@@ -650,6 +650,7 @@ section {
   margin-top: 24px;
   inset: 24px 0% auto;
   display: flex;
+  gap:8px;
   justify-content: space-between;
   background-color: var(--color-background-blur);
   box-shadow: 0 0 0 1px var(--color-border-level-2);
@@ -917,6 +918,41 @@ section {
 
 a:has(.logo-text) {
   text-decoration: none !important;
+}
+
+/* Client logos theme switching */
+.clients-logo-dark {
+  display: none;
+}
+
+.clients-logo-light {
+  display: inline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .clients-logo-dark {
+    display: inline;
+  }
+  
+  .clients-logo-light {
+    display: none;
+  }
+}
+
+:root[data-theme="light"] .clients-logo-dark {
+  display: none;
+}
+
+:root[data-theme="light"] .clients-logo-light {
+  display: inline;
+}
+
+:root[data-theme="dark"] .clients-logo-dark {
+  display: inline;
+}
+
+:root[data-theme="dark"] .clients-logo-light {
+  display: none;
 }
 
 .icon-heading {
